@@ -15,9 +15,11 @@ public class TestController {
 		
 		Product product = new Product(5, "yancy", 2966);
 		
+		boolean flag = true;
+		
 		m.addAttribute("htmlContent", htmlContent);
 		m.addAttribute("product", product);
-		
+		m.addAttribute("flag", flag);
 		return "test";
 	}
 	

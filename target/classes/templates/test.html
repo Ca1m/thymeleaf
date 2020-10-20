@@ -17,6 +17,16 @@
 <body>
 	
 	<div class="showing">
+		<h2>if 判断</h2>
+		<p th:if="${flag}">flag == true 显示</p>
+		<p th:if="${not flag}"> flag != true 显示</p>
+		<p th:unless="${flag}"> flag != true 显示</p>
+		<p th:text="${flag}?'flag'" />
+	</div>
+	
+	
+	
+	<div class="showing">
 		<h2>显示转义和非转义的 html 文本</h2>
 		<p th:text="${htmlContent}" />
 		<p th:utext="${htmlContent}" />
@@ -35,7 +45,11 @@
     	<p th:text="*{price}" />
     </div>
     
-    
+    <div class="showing">
+    	<h2>include</h2>
+    	<div th:replace="include::footer1" ></div>
+    	<div th:replace="include::footer2(2015,2018)" ></div>
+    </div>
     
 </body>
 </html>
