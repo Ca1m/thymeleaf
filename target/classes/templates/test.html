@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
+<<<<<<< HEAD
     <title>hello</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" type="text/css" media="all" href="../../webapp/static/css/style.css" th:href="@{/static/css/style.css}"/>
@@ -122,3 +123,62 @@
 
 </body>
 </html>
+=======
+	<title>test</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" media="all" href="../../webapp/static/css/style.css" th:href="@{/static/css/style.css}"/>
+    <script type="text/javascript" src="../../webapp/static/js/thymeleaf.js" th:src="@{/static/js/thymeleaf.js}"></script>
+     
+    <style>
+        h2{
+            text-decoration: underline;
+            font-size:0.9em;
+            color:gray;
+        }
+    </style>       
+</head>
+<body>
+	
+	<div class="showing">
+		<h2>if 判断</h2>
+		<p th:if="${flag}">flag == true 显示</p>
+		<p th:if="${not flag}"> flag != true 显示</p>
+		<p th:unless="${flag}"> flag != true 显示</p>
+		<p th:text="${flag}?'flag'" />
+	</div>
+	
+	
+	
+	<div class="showing">
+		<h2>显示转义和非转义的 html 文本</h2>
+		<p th:text="${htmlContent}" />
+		<p th:utext="${htmlContent}" />
+	</div>
+    
+    <div class="showing">
+    	<h2>显示对象以及对象属性</h2>
+    	<p th:text="${product}" />
+    	<p th:text="${product.name}" />
+    	<p th:text="${product.price}" />
+    </div>
+    
+    <div class="showing" th:object="${product}">
+    	<h2>*{}显示对象属性</h2>
+    	<p th:text="*{name}" />
+    	<p th:text="*{price}" />
+    </div>
+    
+    <div class="showing">
+    	<h2>include</h2>
+    	<div th:replace="include::footer1" ></div>
+    	<div th:replace="include::footer2(2015,2018)" ></div>
+    </div>
+    
+</body>
+</html>
+
+
+
+
+
+>>>>>>> branch 'master' of https://github.com/Ca1m/thymeleaf.git
