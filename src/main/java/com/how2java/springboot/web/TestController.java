@@ -1,7 +1,7 @@
 package com.how2java.springboot.web;
 
- 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.stereotype.Controller;
@@ -26,10 +26,13 @@ public class TestController {
         products.add(currentProduct);
         products.add(new Product(6, "yancy_04", 6));
         
+        Date now = new Date();
+        
         m.addAttribute("htmlContent", htmlContent);
         m.addAttribute("currentProduct", currentProduct);
         m.addAttribute("testBoolean", testBoolean);
         m.addAttribute("products", products);
+        m.addAttribute("now", now);
         
         return "test";
     }
