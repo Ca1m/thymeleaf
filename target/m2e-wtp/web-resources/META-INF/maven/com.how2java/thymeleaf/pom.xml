@@ -17,18 +17,28 @@
     </parent>
  
     <dependencies>
+    	<!-- Springbot web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <!-- springboot thymeleaf -->
         <dependency>
           <groupId>org.springframework.boot</groupId>
           <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
+        <!-- springboot tomcat -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-tomcat</artifactId>
         </dependency>
+        <!-- thymeleaf legacyhtml5 模式支持 -->      
+        <dependency>
+            <groupId>net.sourceforge.nekohtml</groupId>
+            <artifactId>nekohtml</artifactId>
+            <version>1.9.22</version>
+        </dependency>        
+        <!-- 测试支持 -->
         <dependency>
               <groupId>junit</groupId>
               <artifactId>junit</artifactId>
@@ -38,17 +48,14 @@
         <dependency>
               <groupId>javax.servlet</groupId>
               <artifactId>javax.servlet-api</artifactId>
-               
         </dependency>
               <dependency>
                      <groupId>javax.servlet</groupId>
                      <artifactId>jstl</artifactId>
               </dependency>
-        <!-- tomcat的支持.-->
         <dependency>
                <groupId>org.apache.tomcat.embed</groupId>
                <artifactId>tomcat-embed-jasper</artifactId>
-                
         </dependency>    
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -87,5 +94,4 @@
             </plugin>
         </plugins>
     </build>
- 
 </project>

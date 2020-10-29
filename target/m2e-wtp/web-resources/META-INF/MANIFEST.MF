@@ -1,10 +1,10 @@
 Manifest-Version: 1.0
-Implementation-Title: thymeleaf
+Implementation-Title: springboot
 Implementation-Version: 0.0.1-SNAPSHOT
-Built-By: ca1m
+Built-By: Infosec_jy
 Implementation-Vendor-Id: com.how2java
-Build-Jdk: 1.8.0_141
-Implementation-URL: http://projects.spring.io/spring-boot/thymeleaf/
+Build-Jdk: 1.8.0_151
+Implementation-URL: http://projects.spring.io/spring-boot/springboot/
 Created-By: Maven Integration for Eclipse
 Implementation-Vendor: Pivotal Software, Inc.
 
